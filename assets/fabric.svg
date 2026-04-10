@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#131a2a"/>
+  <rect x="70" y="60" width="760" height="480" rx="30" fill="#1a2334" stroke="#c8a56c" stroke-opacity=".45"/>
+  <path d="M150 165h520v44H150z" fill="#ead7bb" opacity=".18"/>
+  <path d="M190 245h440v44H190z" fill="#d0b186" opacity=".16"/>
+  <path d="M230 325h360v44H230z" fill="#ead7bb" opacity=".18"/>
+  <circle cx="695" cy="275" r="64" fill="#ecd9bb" opacity=".12"/>
+  <text x="120" y="500" fill="#efe3d2" font-family="Georgia" font-size="44">Fabric &amp; Material</text>
+</svg>

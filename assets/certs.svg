@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#131a2a"/>
+  <rect x="70" y="60" width="760" height="480" rx="30" fill="#1a2334" stroke="#c8a56c" stroke-opacity=".45"/>
+  <circle cx="260" cy="260" r="84" fill="#ead7bb" opacity=".16"/>
+  <circle cx="455" cy="260" r="84" fill="#d0b186" opacity=".16"/>
+  <circle cx="650" cy="260" r="84" fill="#ead7bb" opacity=".16"/>
+  <text x="216" y="275" fill="#f0e4d0" font-family="Georgia" font-size="28">QC</text>
+  <text x="420" y="275" fill="#f0e4d0" font-family="Georgia" font-size="28">Spec</text>
+  <text x="608" y="275" fill="#f0e4d0" font-family="Georgia" font-size="28">Batch</text>
+  <text x="120" y="500" fill="#efe3d2" font-family="Georgia" font-size="44">Certifications &amp; Checks</text>
+</svg>
