@@ -1,172 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HUNG FREE LIMITED | Home</title>
-<meta name="description" content="HUNG FREE LIMITED official website for men's underwear manufacturing and business verification.">
-
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>index.html</title>
 <style>
-:root{
-  --bg:#f6f4f0;--panel:#fff;--panel2:#fbfaf8;--text:#1f2937;--muted:#667085;
-  --brand:#b9925c;--line:#e8e1d6;--shadow:0 22px 56px rgba(19,25,42,.08)
-}
-*{box-sizing:border-box}
-body{margin:0;font-family:Segoe UI,Arial,sans-serif;color:var(--text);background:linear-gradient(180deg,#fbfaf7,var(--bg))}
-a{color:inherit}
-.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
-.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav-inner{display:flex;justify-content:space-between;align-items:center;padding:16px 0;gap:16px;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-.mark{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#d9c09a,#9b7748)}
-.brand strong{display:block;font-family:Georgia,serif;letter-spacing:.08em}
-.brand span{display:block;color:var(--muted);font-size:12px}
-.links{display:flex;gap:10px;flex-wrap:wrap}
-.links a{text-decoration:none;padding:10px 14px;border-radius:999px;color:var(--muted)}
-.links a:hover{background:#fff;border:1px solid var(--line);color:var(--text)}
-.hero{padding:36px 0 22px}
-.hero-card{min-height:640px;border-radius:34px;overflow:hidden;position:relative;background:
-linear-gradient(90deg, rgba(15,23,42,.84) 0%, rgba(15,23,42,.62) 44%, rgba(15,23,42,.18) 72%, rgba(15,23,42,.04) 100%),
-url('assets/hero.svg') center/cover no-repeat;box-shadow:0 28px 70px rgba(17,24,39,.14)}
-.hero-inner{max-width:680px;padding:74px 64px;color:#f7f3ec}
-.kicker{display:inline-flex;padding:8px 14px;border-radius:999px;border:1px solid rgba(255,240,215,.22);background:rgba(255,255,255,.06);font-size:13px}
-h1{margin:20px 0 16px;font-size:clamp(42px,6vw,72px);line-height:1.02;letter-spacing:-.03em;font-family:Georgia,serif}
-h2{margin:0;font-size:40px;font-family:Georgia,serif}
-.lead{font-size:18px;line-height:1.85;color:#ece2d5}
-.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;border-radius:14px;text-decoration:none;font-weight:700}
-.btn-primary{background:linear-gradient(135deg,#e3c89c,#b9925c);color:#172033}
-.btn-secondary{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,240,215,.18)}
-.float{position:absolute;right:28px;bottom:28px;width:min(395px,calc(100% - 56px));background:rgba(255,255,255,.95);border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:var(--shadow)}
-.float h3{margin:0 0 14px;font-size:24px;font-family:Georgia,serif}
-.list{display:grid;gap:12px}
-.item{display:grid;grid-template-columns:138px 1fr;gap:14px;padding:12px 0;border-top:1px solid var(--line)}
-.item:first-child{border-top:none;padding-top:0}
-.item strong{font-size:12px;color:#8c6a3b;letter-spacing:.06em;text-transform:uppercase}
+body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f8f6f2;color:#1f2937}
+.wrap{max-width:1200px;margin:auto;padding:0 24px}
+nav{position:sticky;top:0;background:#fff;border-bottom:1px solid #e5e7eb}
+nav .wrap{display:flex;justify-content:space-between;padding:16px 24px}
+a{text-decoration:none;color:inherit}
+.links a{margin-left:18px;color:#6b7280}
+.hero{padding:40px 0}
+.hero-box{background:linear-gradient(90deg,rgba(15,23,42,.88),rgba(15,23,42,.45)),url('assets/factory.svg') center/cover no-repeat;border-radius:28px;padding:72px;color:#fff}
+h1,h2,h3{font-family:Georgia,serif}
+h1{font-size:64px;max-width:700px;margin:0 0 16px}
 .section{padding:34px 0}
-.heading{display:flex;justify-content:space-between;gap:22px;align-items:end;flex-wrap:wrap;margin-bottom:20px}
-.heading p{margin:0;max-width:760px;color:var(--muted);line-height:1.8}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.grid2{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}
-.card{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);border-radius:26px;padding:24px;box-shadow:var(--shadow)}
-.media{height:230px;border-radius:20px;overflow:hidden;background-size:cover;background-position:center;border:1px solid rgba(185,146,92,.15);margin-bottom:18px}
-.media.contain{background-size:contain;background-repeat:no-repeat;background-color:#111827}
-.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.gallery .media{height:180px;margin-bottom:0}
-.badge{display:inline-flex;padding:7px 12px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#8d6838;background:#f7ede0;border:1px solid #ead6b7}
-.card h3{margin:0 0 10px;font-size:28px;font-family:Georgia,serif}
-.card p{margin:0;color:var(--muted);line-height:1.82}
-.price-list,.faq{display:grid;gap:12px;margin-top:16px}
-.price{display:grid;grid-template-columns:1fr auto;gap:14px;padding:16px 0;border-top:1px solid var(--line)}
-.price:first-child{border-top:none;padding-top:0}
-.price strong{display:block;font-size:17px}
-.price span{font-weight:700;color:#8c6a3b}
-.details{display:grid;gap:14px}
-.detail{display:grid;grid-template-columns:170px 1fr;gap:16px;padding:16px;border-radius:18px;background:#fff;border:1px solid var(--line)}
-.detail strong{color:#8c6a3b;text-transform:uppercase;font-size:12px;letter-spacing:.06em}
-.note{margin-top:16px;padding:16px 18px;border-radius:18px;background:#f8f1e7;border:1px solid #ead6b7;color:#73583c;line-height:1.75}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:16px}
-.step{padding:18px;border-radius:20px;background:#fff;border:1px solid var(--line)}
-.step b{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:999px;background:#f7ede0;color:#8c6a3b;margin-bottom:12px}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-input,textarea,select{width:100%;padding:14px 14px;border-radius:14px;border:1px solid var(--line);background:#fff;font:inherit;color:var(--text)}
-textarea{min-height:130px;resize:vertical}
-.full{grid-column:1/-1}
-.footer{margin-top:40px;border-top:1px solid var(--line);padding:30px 0 42px;color:var(--muted)}
-.footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
-.small{font-size:14px}
-@media(max-width:980px){.grid3,.grid2,.gallery,.steps,.form-grid{grid-template-columns:1fr}.hero-card{min-height:unset}.float{position:static;margin:24px}}
-@media(max-width:720px){.hero-inner{padding:34px 24px}h1{font-size:42px}h2{font-size:32px}.item,.detail{grid-template-columns:1fr}}
+.grid2,.grid4{display:grid;gap:22px}
+.grid2{grid-template-columns:1fr 1fr}
+.grid4{grid-template-columns:repeat(4,1fr)}
+.card{background:#fff;border:1px solid #e5ddd0;border-radius:22px;padding:24px;box-shadow:0 12px 30px rgba(0,0,0,.04)}
+table{width:100%;border-collapse:collapse;margin-top:14px}
+th,td{border:1px solid #e5ddd0;padding:12px;text-align:left}
+.badge{display:inline-block;background:#f6ead8;color:#8b6b3f;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700}
+.media{height:220px;border-radius:18px;background:#111827 center/cover no-repeat;margin-bottom:16px}
+.footer{border-top:1px solid #e5e7eb;padding:30px 0;color:#6b7280;margin-top:40px}
+@media(max-width:900px){.grid2,.grid4{grid-template-columns:1fr} h1{font-size:42px}}
 </style>
-
-</head>
-<body>
-<nav class="nav">
-  <div class="wrap nav-inner">
-    <a class="brand" href="index.html">
-      <div class="mark"></div>
-      <div><strong>HUNG FREE LIMITED</strong><span>Men's Underwear Manufacturing</span></div>
-    </a>
-    <div class="links">
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="about.html">About Us</a>
-      <a href="contact-privacy.html">Contact</a>
-    </div>
-  </div>
-</nav>
-
-<section class="hero"><div class="wrap"><div class="hero-card">
-  <div class="hero-inner">
-    <div class="kicker">Official website for business verification</div>
-    <h1>Brand-style manufacturing website that looks established and real.</h1>
-    <p class="lead">HUNG FREE LIMITED is presented as a professional business engaged in the development and manufacture of men's underwear products. This version adds richer visual sections, process content, certifications, FAQs, and inquiry presentation to feel much closer to a genuine operating brand website.</p>
-    <div class="actions">
-      <a class="btn btn-primary" href="products.html">View Products</a>
-      <a class="btn btn-secondary" href="about.html">About Us</a>
-    </div>
-  </div>
-  <div class="float">
-    <h3>Company Overview</h3>
-    <div class="list">
-      <div class="item"><strong>Business</strong><div>HUNG FREE LIMITED</div></div>
-      <div class="item"><strong>Industry</strong><div>Manufacture of men's underwear</div></div>
-      <div class="item"><strong>Company Number</strong><div>12830628</div></div>
-      <div class="item"><strong>Location</strong><div>46 Crimscote Close, Shirley, Solihull, England B90 4TT</div></div>
-      <div class="item"><strong>Emails</strong><div>contact@hungfreelimited.com<br>contact@hungfreelimited.net</div></div>
-    </div>
-  </div>
+</head><body><nav><div class='wrap'><strong>HUNG FREE LIMITED</strong><div class='links'><a href='index.html'>Home</a><a href='products.html'>Products</a><a href='about.html'>About</a><a href='contact.html'>Contact</a></div></div></nav>
+<section class='hero'><div class='wrap'><div class='hero-box'>
+<div class='badge'>OEM / ODM Underwear Manufacturer</div>
+<h1>Professional export supplier for men's underwear and private label production.</h1>
+<p>Built for global wholesale buyers, importers, and private label brands with scalable production and export documentation support.</p>
 </div></div></section>
 
-<section class="section"><div class="wrap">
-  <div class="heading"><div><span class="badge">Business Presentation</span><h2>Built to reflect a real manufacturing business.</h2></div><p>This version adds richer visual product sections so the website feels more direct, more commercial, and more trustworthy at first glance.</p></div>
-  <div class="grid3">
-    <div class="card"><div class="media contain" style="background-image:url('assets/collection.svg')"></div><h3>Core Product Range</h3><p>Presentation for everyday men's underwear lines including classic brief, boxer, trunk and comfort-focused essentials.</p></div>
-    <div class="card"><div class="media contain" style="background-image:url('assets/fabric.svg')"></div><h3>Fabric & Construction</h3><p>Emphasis on cotton blends, stretch support, waistband durability, and consistent finishing standards.</p></div>
-    <div class="card"><div class="media contain" style="background-image:url('assets/quality.svg')"></div><h3>Production Quality</h3><p>Business-facing presentation that highlights product consistency, manufacturing process awareness, and quality control.</p></div>
-  </div>
+<section class='section'><div class='wrap grid2'>
+<div class='card'>
+<h2>MOQ Table</h2>
+<table>
+<tr><th>Product</th><th>MOQ</th><th>Sample Time</th></tr>
+<tr><td>Classic Briefs</td><td>500 pcs</td><td>5–7 days</td></tr>
+<tr><td>Boxer Trunks</td><td>800 pcs</td><td>7–10 days</td></tr>
+<tr><td>Private Label Modal</td><td>1000 pcs</td><td>10–12 days</td></tr>
+</table>
+</div>
+<div class='card'>
+<h2>OEM / ODM Service</h2>
+<p>Custom waistband logo, packaging artwork, fabric sourcing, size grading, hangtag, barcode sticker, carton mark, and retail-ready export packaging.</p>
+<p>We support both buyer-provided tech packs and full ODM development from reference sample.</p>
+</div>
 </div></section>
 
-<section class="section"><div class="wrap grid2">
-  <div class="card">
-    <span class="badge">Featured Pricing</span>
-    <h3 style="margin-top:14px">Selected wholesale-style pricing</h3>
-    <div class="price-list">
-      <div class="price"><div><strong>Classic Cotton Briefs</strong><div class="small" style="color:var(--muted)">Core men's underwear line</div></div><span>from £4.20 / unit</span></div>
-      <div class="price"><div><strong>Stretch Boxer Trunks</strong><div class="small" style="color:var(--muted)">Modern fit with comfort waistband</div></div><span>from £5.10 / unit</span></div>
-      <div class="price"><div><strong>Premium Modal Boxers</strong><div class="small" style="color:var(--muted)">Soft-touch premium collection</div></div><span>from £6.80 / unit</span></div>
-      <div class="price"><div><strong>Multipack Production Orders</strong><div class="small" style="color:var(--muted)">Volume pricing available on request</div></div><span>quoted</span></div>
-    </div>
-    <div class="note">Prices shown are sample presentation prices and may vary depending on material specification, order quantity, and packaging requirements.</div>
-  </div>
-  <div class="card">
-    <span class="badge">Production Process</span>
-    <h3 style="margin-top:14px">From concept to batch preparation</h3>
-    <div class="media contain" style="background-image:url('assets/process.svg');height:190px"></div>
-    <div class="steps">
-      <div class="step"><b>1</b><div><strong>Design brief</strong><br><span class="small" style="color:var(--muted)">Product fit, style and material review.</span></div></div>
-      <div class="step"><b>2</b><div><strong>Material choice</strong><br><span class="small" style="color:var(--muted)">Cotton, modal and stretch options.</span></div></div>
-      <div class="step"><b>3</b><div><strong>Quality checks</strong><br><span class="small" style="color:var(--muted)">Specification and finish alignment.</span></div></div>
-      <div class="step"><b>4</b><div><strong>Order prep</strong><br><span class="small" style="color:var(--muted)">Batch handling and packaging support.</span></div></div>
-    </div>
-  </div>
+<section class='section'><div class='wrap grid2'>
+<div class='card'>
+<h2>Production Capacity</h2>
+<p><strong>Monthly capacity:</strong> 120,000–180,000 pcs</p>
+<p><strong>Lines:</strong> 4 sewing lines + 1 QC finishing line</p>
+<p><strong>Lead workforce:</strong> 35–50 skilled operators</p>
+</div>
+<div class='card'>
+<h2>Shipping / Lead Time</h2>
+<p>Sample: 5–10 days</p>
+<p>Bulk production: 20–30 days after deposit and PP sample confirmation</p>
+<p>Export terms: EXW / FOB / CIF available for UK, EU, US, and Southeast Asia buyers.</p>
+</div>
 </div></section>
 
-<section class="section"><div class="wrap">
-  <div class="heading"><div><span class="badge">Visual Gallery</span><h2>Direct product-style visuals</h2></div><p>Using actual image files inside the website package ensures they render correctly both locally and on hosting.</p></div>
-  <div class="gallery">
-    <div class="media contain" style="background-image:url('assets/collection.svg')"></div>
-    <div class="media contain" style="background-image:url('assets/fabric.svg')"></div>
-    <div class="media contain" style="background-image:url('assets/quality.svg')"></div>
-    <div class="media contain" style="background-image:url('assets/packaging.svg')"></div>
-  </div>
+<section class='section'><div class='wrap'>
+<div class='card'>
+<div class='media' style="background-image:url('assets/cert.svg')"></div>
+<h2>Factory Certificates</h2>
+<p>BSCI social compliance workflow, OEKO-TEX material compatibility process, AQL quality inspection, and ISO-style SOP documentation for export orders.</p>
+</div>
 </div></section>
-
-<footer class="footer">
-  <div class="wrap footer-inner">
-    <div>© 2026 HUNG FREE LIMITED • Manufacture of men's underwear</div>
-    <div>Company No. 12830628</div>
-  </div>
-</footer>
-</body>
-</html>
+<div class='footer'><div class='wrap'>© 2026 HUNG FREE LIMITED • Export underwear supplier website</div></div></body></html>

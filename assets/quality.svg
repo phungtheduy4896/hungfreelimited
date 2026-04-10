@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
-  <rect width="900" height="600" fill="#131a2a"/>
-  <rect x="70" y="60" width="760" height="480" rx="30" fill="#1a2334" stroke="#c8a56c" stroke-opacity=".45"/>
-  <circle cx="270" cy="275" r="92" fill="#ead7bb" opacity=".16"/>
-  <circle cx="455" cy="275" r="72" fill="#d0b186" opacity=".13"/>
-  <circle cx="620" cy="275" r="56" fill="#ead7bb" opacity=".11"/>
-  <path d="M225 275l34 34 70-80" fill="none" stroke="#ead7bb" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="120" y="500" fill="#efe3d2" font-family="Georgia" font-size="44">Quality Control</text>
-</svg>
